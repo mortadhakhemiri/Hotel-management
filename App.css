@@ -1,0 +1,215 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #eef2f3);
+  padding: 50px 30px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+  color: #333;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ff7a00, #ffac33);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+/* Gradient animation for the heading */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form Container */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.form:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Inputs */
+.form input {
+  width: 100%;
+  height: 50px;
+  margin: 12px 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  color: #555;
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Focus Effect on Input */
+.form input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Form Button */
+.form button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.form button:hover {
+  background: linear-gradient(135deg, #388e3c, #66bb6a);
+  transform: scale(1.05);
+}
+
+/* Button Active State */
+.form button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 500px;
+  padding: 30px;
+  border: none;
+  border-radius: 18px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Card Paragraph */
+.card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Buttons Inside Cards */
+.card button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.card button:first-of-type {
+  background: linear-gradient(135deg, #e53935, #f44336);
+}
+
+.card button:first-of-type:hover {
+  background: linear-gradient(135deg, #c62828, #d32f2f);
+  transform: scale(1.1);
+}
+
+.card button:last-of-type {
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+}
+
+.card button:last-of-type:hover {
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  transform: scale(1.1);
+}
+
+/* Card Inputs */
+.card input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+/* Update Button */
+.card .update-button {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card .update-button:hover {
+  background: linear-gradient(135deg, #388e3c, #66bb6a);
+  transform: scale(1.05);
+}
+
+/* Global Transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
